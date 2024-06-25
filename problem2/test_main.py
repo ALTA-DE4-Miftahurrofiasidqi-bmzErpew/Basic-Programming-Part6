@@ -1,6 +1,6 @@
 import unittest
+from main import caesar
 
-import main from caesar
 
 class TestCaesarFunction(unittest.TestCase):
 
@@ -14,10 +14,15 @@ class TestCaesarFunction(unittest.TestCase):
         self.assertEqual(caesar(10, "alterraacademy"), "kvdobbkkmknowi")
 
     def test_caesar_with_offset_1_wraparound(self):
-        self.assertEqual(caesar(1, "abcdefghijklmnopqrstuvwxyz"), "bcdefghijklmnopqrstuvwxyza")
+        self.assertEqual(
+            caesar(1, "abcdefghijklmnopqrstuvwxyz"), "bcdefghijklmnopqrstuvwxyza"
+        )
 
     def test_caesar_with_large_offset_wraparound(self):
-        self.assertEqual(caesar(1000, "abcdefghijklmnopqrstuvwxyz"), "mnopqrstuvwxyzabcdefghijkl")
+        self.assertEqual(
+            caesar(1000, "abcdefghijklmnopqrstuvwxyz"), "mnopqrstuvwxyzabcdefghijkl"
+        )
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

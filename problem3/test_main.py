@@ -1,6 +1,7 @@
 import unittest
 
-import main from array_unique
+from main import array_unique
+
 
 class TestArrayUniqueFunction(unittest.TestCase):
 
@@ -19,5 +20,6 @@ class TestArrayUniqueFunction(unittest.TestCase):
     def test_no_unique_elements(self):
         self.assertEqual(array_unique([1, 2, 3], [3, 2, 1]), [])
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

@@ -1,5 +1,6 @@
 import unittest
-import main from find_max_sum_sub_arra
+from main import find_max_sum_sub_array
+
 
 class TestFindMaxSumSubArray(unittest.TestCase):
 
@@ -18,5 +19,6 @@ class TestFindMaxSumSubArray(unittest.TestCase):
     def test_case_5(self):
         self.assertEqual(find_max_sum_sub_array(4, [2, 1, 4, 1, 1]), 8)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

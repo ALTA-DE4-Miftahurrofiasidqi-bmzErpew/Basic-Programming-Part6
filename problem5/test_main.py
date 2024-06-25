@@ -1,6 +1,7 @@
 import unittest
 
-import main from remove_duplicates
+from main import remove_duplicates
+
 
 class TestRemoveDuplicatesFunction(unittest.TestCase):
 
@@ -19,5 +20,6 @@ class TestRemoveDuplicatesFunction(unittest.TestCase):
     def test_case_5(self):
         self.assertEqual(remove_duplicates([1, 2, 3, 11, 11]), 4)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
