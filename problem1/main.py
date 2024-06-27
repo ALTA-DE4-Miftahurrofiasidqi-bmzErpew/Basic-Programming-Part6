@@ -3,11 +3,8 @@ def compare(a, b):
         a = b
         b = a
 
-    pattern = ""
-    for i, huruf in enumerate(a):
-        if huruf == b[i]:
-            pattern += huruf
-    return pattern
+    if b.count(a) == 1:
+        return a
 
 
 if __name__ == "__main__":

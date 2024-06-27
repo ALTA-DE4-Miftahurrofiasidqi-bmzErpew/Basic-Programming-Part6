@@ -2,7 +2,7 @@ def find_max_sum_sub_array(k, arr):
     max_sum = 0
     step_sum = 0
 
-    for index in range(len(arr)):
+    for index in range(len(arr) - k):
         window_len = index + k
         select_elements = arr[index:window_len]
 
